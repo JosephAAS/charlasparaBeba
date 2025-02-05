@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Videos 💖</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffe6e6;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .video {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tus Videos 💕</h1>
+    <div class="video-container">
+        <div class="video">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>Día 1: Un mensaje especial 💖</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>Día 2: Otro día contigo 💕</p>
+        </div>
+    </div>
+</body>
+</html>
