@@ -20,11 +20,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 90%;
         }
         .cover img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 500px; /* Ajusta este valor según el tamaño deseado */
+            height: auto;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
         }
         button {
             margin-top: 20px;
@@ -43,7 +47,7 @@
         <h1>Bienvenida, mi amor 💕</h1>
         <p>Espero que disfrutes los videos que hice para ti.</p>
         <img src="portada.jpg" alt="Portada especial">
-        <button onclick="window.location.href='galeriavideos.html'">Ver Videos 🎥</button>
+        <button onclick="window.location.href='pagina_videos_galeria.html'">Ver Videos 🎥</button>
     </div>
 </body>
 </html>
